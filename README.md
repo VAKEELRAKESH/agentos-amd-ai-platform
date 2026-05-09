@@ -1,6 +1,12 @@
 # AgentOS — AMD-Powered Multi-Agent Workflow Console
 
-AgentOS is a production-style AI agent workflow console built for the AMD Developer Hackathon. It enables users to run structured AI workflows through planning, execution, validation, and memory recall using an open-source model served through vLLM on AMD GPU cloud infrastructure.
+I built AgentOS for the AMD Developer Hackathon to test how a practical AI agent workflow can run on AMD GPU cloud infrastructure.
+
+The idea is simple: instead of giving only one chatbot-style answer, the system takes a user task and runs it through a structured workflow — planning, execution, validation, and memory recall.
+
+The frontend is built with React and Vite. The backend is built with FastAPI. The model is Mistral 7B served through vLLM on an AMD GPU cloud instance. The backend connects to that vLLM endpoint and returns structured workflow results to the UI.
+
+This project is mainly focused on Track 1: AI Agents & Agentic Workflows.
 
 ## What It Does
 
@@ -11,8 +17,6 @@ AgentOS turns a single user prompt into a complete AI workflow:
 3. Quality validation
 4. Memory/context recall
 5. Final response generation
-
-The system is designed for developers, small software teams, hackathon builders, and AI teams that need reliable, structured AI-assisted workflows instead of simple chatbot responses.
 
 ## Key Features
 
