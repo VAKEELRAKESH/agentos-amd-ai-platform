@@ -1,0 +1,53 @@
+# Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+frontend/.env.local
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+
+# Local data / memory
+data/vectordb/
+data/vectordb.backup*/
+*.sqlite3
+
+# Logs
+*.log
+backend_log.txt
+app.pid
+
+# Temporary scripts / test outputs
+request.json
+vllm-test.json
+vllm-response.json
+backend-run-response.json
+test_prompts.py
+test_final_fixes.py
+patch_response_guard.py
+start_clean_stack.ps1
+
+# Backups
+*.before-*
+*.bak
+frontend/src/App.before-*.jsx
+frontend/src/App.before-*.css
+backend/workflows/*.before-*.py
+backend/services/*.before-*.py
+backend/api/*.before-*.py
+configs/*.before-*.py
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
